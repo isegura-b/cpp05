@@ -2,10 +2,9 @@ NAME = forms
 SRC_DIR = .
 OBJ_DIR = obj
 DEP_DIR = deps
-INC_DIR = inc
 
 CXX = c++
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -MMD -I $(INC_DIR)
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address -MMD
 
 SRC = \
 	${SRC_DIR}/main.cpp \
