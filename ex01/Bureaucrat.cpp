@@ -1,5 +1,6 @@
 #include "Bureaucrat.hpp"
 #include "Form.hpp"
+
 Bureaucrat::Bureaucrat() : _name("Unnamed"), _grade(150)
 {
     std::cout << "Default constructor called" << std::endl;
@@ -59,7 +60,7 @@ void Bureaucrat::decrementGrade()
 
 std::ostream &operator<<(std::ostream &os, const Bureaucrat &b)
 {
-    os << b.getName() << ", bureaucrat grade " << b.getGrade();
+    os << b.getName() << ", bureaucrat grade " << b.getGrade() << ".";
     return os;
 }
 
